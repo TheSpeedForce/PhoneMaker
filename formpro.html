@@ -1,0 +1,123 @@
+<!doctype html>
+
+<!--
+TITLE: Final Project
+AUTHOR: Pawas Aggarwal
+PURPOSE: Form Protoype for final project
+ORIGINALLY CREATED ON: 13-Apr-2020
+LAST MODIFIED ON: 13-Apr-2020
+LAST MODIFIED BY: Pawas Aggarwal
+MODIFICATION HISTORY: 
+13-Apr-2020: Create date
+
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Form Protoype</title>
+	<link href="formpro.css" rel="stylesheet">
+	<link href="theme/jquery-ui.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<h1>PhoneMaker</h1>
+	
+	 <div id="tabs">
+        <ul>
+		<li><a href="#tabs-1">Phone Examples</a></li>
+		<li><a href="#tabs-2">Make Your Own Phone</a></li>
+		<li><a href="#tabs-3">Phone Delivery</a></li>
+		<li><a href="#tabs-4">About Us</a></li>
+	</ul>
+		<div id = "tabs-1">
+		
+			<div id = "accordion">
+				<h2>TheNecessaryPhone 1.0</h2>
+				<p>
+					Work in Progress
+				</p>
+				<h3>oPhone 5P</h3>
+				<p>
+					Work in Progress
+				</p>
+			</div><br><br>
+			
+		
+		</div>
+		
+		<div id = "tabs-2">
+	
+			<form id = "phoneSpecs">
+			<fieldset> 
+					
+				<legend>Enter the phone Specifications you want</legend>
+				
+				<label>Phone Name: </label><input autofocus><br>
+				<label>Phone Color: </label><input><br>
+				<br>
+				<label>Phone Tagline</label>
+				<div>
+					<input id="autocomplete" title="type &quot;a&quot;">
+				</div>
+				<br>
+				
+				<label>Screen Size:</label><input id = "spinner"><label> inches</label><br><br>
+				
+				<br>
+				<label>RAM Options </label><br>
+				<label for="4GB">4GB</label>
+				<input type="radio" name="4GB" id="4GB"><br>
+				<label for="8GB">8GB</label>
+				<input type="radio" name="8GB" id="8GB"><br>
+				<label for="12GB">12GB</label>
+				<input type="radio" name="12GB" id="12GB"><br>
+				<br>
+				
+
+				<label>Extra Features</label><br>
+				<label for="checkbox-1">3.5mm Headphone Jack</label>
+				<input type="checkbox" name="checkbox-1" id="checkbox-1"><br>
+				<label for="checkbox-2">IR blaster</label>
+				<input type="checkbox" name="checkbox-2" id="checkbox-2"><br>
+				<label for="checkbox-3">Volume Slider</label>
+				<input type="checkbox" name="checkbox-3" id="checkbox-3"><br>
+				<label for="checkbox-4">Dual Sim</label>
+				<input type="checkbox" name="checkbox-4" id="checkbox-4"><br>
+				<br>
+				
+				<input type="reset" value="Reset">
+				<input type="submit" value="Submit" id = "submitform"><br>
+				<p id = "output">Choose your own specifications</p>
+			
+			</fieldset>
+			</form>
+
+
+		</div>
+		
+		<div id = "tabs-3">
+		<label>Email: </label><input type="email"><br>
+		<label>Password: </label><input type="password"><br>
+		<label>Telephone Number: </label><input type="tel"><br><br>
+		<p>Date of Delivery: <input type="text" id="datepicker"></p>
+		<label>Work in Progress!</label>
+		
+		</div>
+		
+		<div id = "tabs-4">
+			
+			<p>Purpose</p>
+			<p>The purpose of the PhoneMaker website is to allow the user to create their own customized phone with the specifications they want while keeping it in a price range they can afford. The site provides multiple options for different specifications and shows the price in live time, so the users know if it reaches higher than their budget. The website will be visually appealing and provide tips to create an efficient phone. The website will also have the option to get the phone delivered to their address with different delivery options.</p>
+		
+		</div>		
+		
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="theme/jquery-ui.js"></script>
+	<script src="formpro.js"></script>
+</body>
+
+</html>

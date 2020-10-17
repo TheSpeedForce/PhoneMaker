@@ -1,0 +1,127 @@
+<!doctype html>
+
+<!--
+TITLE: custf0rmval1d.html
+AUTHOR: Pawas Aggarwal
+PURPOSE:  custom form validation for final project
+ORIGINALLY CREATED ON: 27-Apr-2020
+LAST MODIFIED ON: 27-Apr-2020
+LAST MODIFIED BY: Pawas Aggarwal
+MODIFICATION HISTORY: 
+27-Apr-2020: Create date
+
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Custom Form Validation</title>
+	<link href="custf0rmval1d.css" rel="stylesheet">
+	<link href="theme/jquery-ui.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<h1>PhoneMaker</h1>
+	
+	 <div id="tabs">
+        <ul>
+		<li><a href="#tabs-1">Phone Examples</a></li>
+		<li><a href="#tabs-2">Make Your Own Phone</a></li>
+		<li><a href="#tabs-3">About us</a></li>
+	</ul>
+		<div id = "tabs-1">
+		
+			<div id = "accordion">
+				<h2>TheNecessaryPhone 1.0</h2>
+				<p>
+					Work in Progress
+				</p>
+				<h3>oPhone 5P</h3>
+				<p>
+					Work in Progress
+				</p>
+			</div><br><br>
+			
+		</div>
+		
+		<div id = "tabs-2">
+	
+			<form id = "phoneForm">
+			<fieldset> 
+					
+				<legend>Enter the phone Specifications you want</legend>
+				
+				<label>Phone Name: </label><input name = "name" id = "name" autofocus required placeholder = "myPhone"><br><br>
+				
+				<label>Phone Color: </label><input name = "color" id="color" placeholder = "black" title="type &quot;a&quot;"><br><br>
+				
+				<label>Phone Tagline: </label><input id = "tagline" placeholder = "A phone by you and for you"><br><br>
+				
+				<label for = "size">Screen Size:</label>
+				<input type="text" id="size" readonly value = "5.5 - 6.5"><label> inches</label><br>
+				<div id = "slider"></div>
+
+				<br>
+				<label>RAM Options: </label>
+				<input type="radio" name="ram" id="4GB" value = "4GB">
+				<label for="4GB">4GB</label>
+				<input type="radio" name="ram" id="8GB" checked value = "8GB">
+				<label for="8GB">8GB</label>
+				<input type="radio" name="ram" id="12GB" value = "12GB">
+				<label for="12GB">12GB</label>
+				<br><br>
+				
+				<label>Storage Options </label>
+				<input type="radio" name="rom" id="64GB" value = "64GB">
+				<label for="64GB">64GB</label>
+				<input type="radio" name="rom" id="128GB" checked value = "128GB">
+				<label for="128GB">128GB</label>
+				<input type="radio" name="rom" id="256GB" value = "256GB">
+				<label for="256GB">256GB</label>
+				<br><br>
+				
+
+				<label>Extra Features</label><br>
+				<input type="checkbox" name="extra" id="checkbox-1" value = "3.5mm Headphone Jack">
+				<label for="checkbox-1">3.5mm Headphone Jack</label><br>
+				<input type="checkbox" name="extra" id="checkbox-2" value = "IR blaster">
+				<label for="checkbox-2">IR blaster</label><br>
+				<input type="checkbox" name="extra" id="checkbox-3" value = "Volume Slider">
+				<label for="checkbox-3">Volume Slider</label><br>
+				<input type="checkbox" name="extra" id="checkbox-4" value = "Dual Sim">
+				<label for="checkbox-4">Dual Sim</label><br>
+				<br>
+				
+				<label>Enter delivery details</label><br>
+				<label>Email: </label><input name = "email" type="email" required id = "email" placeholder = "youremail@website.com"><br><br>
+				<label>Password: </label><input name = "password" type="password" required id = "password"><br><br>
+				<label>Mobile Number: </label><input name = "mobno" type="tel" placeholder = "9876543210" required id = "mobno"><br><br>
+				<label>Address: </label><input required name = "addr" id = "addr" placeholder = "Apt Number, Building Number, Street Name, City, State, Postal Code"><br><br>
+				<label>Date of Delivery: <input name = "datepicker" type="text" id="datepicker" required> Please note, minimum 45 days are required to make the phone.</label><br><br>
+				<input type="reset" value="Clear" id = "resetform">
+				<input type="submit" value="Submit" id = "submitform"><br>
+				<p id = "output" hidden></p>
+			</fieldset>
+			</form>
+		</div>
+		
+		
+		
+		<div id = "tabs-3">
+			
+			<p>Purpose</p>
+			<p>The purpose of the PhoneMaker website is to allow the user to create their own customized phone with the specifications they want while keeping it in a price range they can afford. The site provides multiple options for different specifications and shows the price in live time, so the users know if it reaches higher than their budget. The website will be visually appealing and provide tips to create an efficient phone. The website will also have the option to get the phone delivered to their address with different delivery options.</p>
+		
+		</div>		
+		
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="theme/jquery-ui.js"></script>
+	<script src="validation/dist/jquery.validate.js"></script>
+	<script src="validation/dist/additional-methods.js"></script>
+	<script src="custf0rmval1d.js"></script>
+</body>
+
+</html>
